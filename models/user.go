@@ -5,7 +5,7 @@ package models
 // Este es un struct Adress que va a ir dentro del struc principal User
 
 type Address struct {
-	State      string `json:"state" bson:"state"`
+	Country    string `json:"country" bson:"country"`
 	City       string `json:"city" bson:"city"`
 	PostalCode int    `json:"postalcode" bson:"postalcode"`
 }
@@ -17,5 +17,5 @@ type User struct {
 	Surname string  `json:"surname" bson:"user_surname"`
 	Dni     string  `json:"dni" bson:"user_dni"`
 	Age     int     `json:"age" bson:"user_age"`
-	Addrees Address `json:"address" bson:"user_address"`
+	Address Address `json:"address" bson:"user_address"`
 }

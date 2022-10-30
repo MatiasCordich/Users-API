@@ -133,7 +133,7 @@ func (u *UserServiceImpl) UpdateUser(user *models.User) error {
 				bson.E{Key: "user_name", Value: user.Name},
 				bson.E{Key: "user_surname", Value: user.Surname},
 				bson.E{Key: "user_age", Value: user.Age},
-				bson.E{Key: "user_address", Value: user.Addrees}}}}
+				bson.E{Key: "user_address", Value: user.Address}}}}
 
 	// Creo la variable result que va a tener a la collecion de Usauarios le paso por parametros el context, y las variables filter y update
 
