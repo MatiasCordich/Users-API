@@ -77,6 +77,6 @@ func main() {
 
 	usercontroller.RegisterUserRoutes(basepath)
 
-	log.Fatal(server.Run(":8800"))
+	log.Fatal(server.Run("https://usersapi.vercel.app"))
 
 }
